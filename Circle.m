@@ -15,8 +15,8 @@ function Circle(x1,y1,x2,y2,x3,y3)
     E_val = (round(det(E))) / (round(det(C)));
     F_val = (-round(det(F))) / (round(det(C)));
     
-    r = round(sqrt((h - x1)^2 + (k - y1)^2));
+    r = sqrt((h - x1)^2 + (k - y1)^2);
     
     fprintf('Center: (%.2f , %.2f)\n',h,k);
-    fprintf('Radius: r = %.0f units\n',r);
+    fprintf('Radius: r = %.2f units\n',r);
     fprintf('Vector: [ %.0f , %.0f , %.0f ]\n',D_val,E_val,F_val);
